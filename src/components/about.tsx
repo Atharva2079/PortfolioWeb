@@ -54,11 +54,21 @@ export const About = () => {
           variants={fadeIn(undefined, undefined, 0.1, 1)}
           className="empty-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
         >
-          I'm a skilled website developer with experience in TypeScript and
-          Javascript, and expertise in frameworks like React, Node.js, and
-          Three.js. I'm a quick learner and collaborate closely with clients to
-          create efficient, scalable, and user-friendly solutions that solve
-          real-world problems. Let's work together to bring your ideas to life!
+          I am a Third-Year Artificial Intelligence &amp; Machine Learning engineering
+          student at VIT Pune with a strong passion for building immersive,
+          intelligent, and visually compelling digital products. My work lies at
+          the intersection of Artificial Intelligence, Augmented Reality, and
+          modern web technologies, where I design solutions that are technically
+          robust, scalable, and user-focused.
+          <br />
+          <br />
+          I have contributed to multiple award-winning and industry-oriented
+          projects spanning healthcare diagnostics, AR-based virtual try-on
+          systems, cultural preservation platforms, and predictive industrial
+          analytics. With over 14+ national level hackathon wins and hands-on
+          experience in machine learning, computer vision, AR/VR development,
+          and full-stack engineering, I enjoy transforming complex real-world
+          problems into intuitive digital solutions.
         </motion.p>
 
         {/* Service Card */}

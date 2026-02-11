@@ -59,6 +59,8 @@ const FeedbackCard = ({
 
 // Feedbacks
 export const Feedbacks = () => {
+  if (!TESTIMONIALS.length) return null;
+
   return (
     <SectionWrapper>
       <div className="mt-12 bg-black-100 rounded-[20px]">

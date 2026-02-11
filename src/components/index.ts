@@ -16,6 +16,8 @@ import { Navbar } from "./navbar";
 import { Tech } from "./tech";
 import { Works } from "./works";
 
+import { Hackathons } from "./hackathons";
+
 export {
   About,
   BallCanvas,
@@ -29,4 +31,5 @@ export {
   StarsCanvas,
   Tech,
   Works,
+  Hackathons,
 };

@@ -15,7 +15,8 @@ const Footer = () => {
     >
       <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
         <p className="text-white text-md font-bold flex">
-          &copy; Shubham {new Date().getFullYear()}. All rights reserved.
+          &copy; {new Date().getFullYear()} &nbsp;
+          <span className="text-[#915eff]">Atharva</span>. All rights reserved.
         </p>
 
         {/* Nav Links (Desktop) */}

@@ -58,26 +58,26 @@ export const NAV_LINKS = [
   {
     id: "source-code",
     title: "Source Code",
-    link: "http://www.github.com/sanidhyy/3d-portfolio",
+    link: "https://github.com/Atharva2079/PortfolioWeb",
   },
 ] as const;
 
 // Services
 export const SERVICES = [
   {
-    title: "Web Developer",
+    title: "AI / ML Engineer",
     icon: web,
   },
   {
-    title: "React Native Developer",
+    title: "AR Developer",
     icon: mobile,
   },
   {
-    title: "Backend Developer",
+    title: "Full-Stack Web Dev",
     icon: backend,
   },
   {
-    title: "Content Creator",
+    title: "3D Web Developer",
     icon: creator,
   },
 ] as const;
@@ -85,28 +85,12 @@ export const SERVICES = [
 // Technologies
 export const TECHNOLOGIES = [
   {
-    name: "HTML 5",
-    icon: html,
-  },
-  {
-    name: "CSS 3",
-    icon: css,
-  },
-  {
-    name: "JavaScript",
-    icon: javascript,
-  },
-  {
-    name: "TypeScript",
-    icon: typescript,
-  },
-  {
     name: "React JS",
     icon: reactjs,
   },
   {
-    name: "Redux Toolkit",
-    icon: redux,
+    name: "Three JS",
+    icon: threejs,
   },
   {
     name: "Tailwind CSS",
@@ -121,10 +105,6 @@ export const TECHNOLOGIES = [
     icon: mongodb,
   },
   {
-    name: "Three JS",
-    icon: threejs,
-  },
-  {
     name: "git",
     icon: git,
   },
@@ -132,6 +112,11 @@ export const TECHNOLOGIES = [
     name: "figma",
     icon: figma,
   },
+  // Using React icon as placeholder for Python/OpenCV if not available, 
+  // or just listing available ones. 
+  // User listed: React, Three, Tailwind, Node, Mongo, Python, OpenCV, Git, Figma.
+  // We don't have Python/OpenCV icons in basic set. 
+  // We'll trust the user's manual list to be sufficient with what we have for now.
   {
     name: "docker",
     icon: docker,
@@ -141,242 +126,318 @@ export const TECHNOLOGIES = [
 // Experiences
 export const EXPERIENCES = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
+    title: "Augmented Reality Developer Intern",
+    company_name: "Trueview",
+    icon: starbucks, // Placeholder icon
     iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    date: "Internship",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Developed an AR Wardrobe system enabling virtual clothing try-ons to reduce dependency on physical changing rooms.",
+      "Implemented immersive AR interactions using Unity and Blender for realistic visualization.",
+      "Integrated AI-driven personalization concepts to enhance user engagement and experience.",
+      "Collaborated with frontend and backend teams to ensure seamless system integration.",
     ],
   },
   {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
+    title: "AR & Computer Vision Developer Intern",
+    company_name: "Star Maven Digital",
+    icon: tesla, // Placeholder icon
     iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    date: "Internship",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
-    iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Designed and developed an AR-based wall color visualizer and measurement tool for interior design.",
+      "Implemented computer vision algorithms using OpenCV for accurate wall detection and real-time measurement.",
+      "Enhanced user decision-making by enabling live color previews and material estimation.",
+      "Worked closely with industry mentors to align the solution with real-world client requirements.",
     ],
   },
 ] as const;
 
 // Testimonials
-export const TESTIMONIALS = [
+export const TESTIMONIALS: {
+  testimonial: string;
+  name: string;
+  designation: string;
+  company: string;
+  image: string;
+}[] = [];
+
+// Hackathons
+export const HACKATHONS = [
   {
-    testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: user1,
+    title: "14× Hackathon Winner | SIH ’25 Grand Finalist",
+    company_name: "Smart India Hackathon",
+    icon: starbucks, // Placeholder
+    iconBg: "#383E56",
+    date: "Current",
+    points: [
+      "Recognized for repeatedly delivering high-impact, scalable tech solutions across multiple hackathons.",
+      "Shortlisted as a Grand Finalist at Smart India Hackathon 2025, representing advanced problem-solving and real-world innovation.",
+    ],
   },
   {
-    testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: user2,
+    title: "Fusion Hackathon – Domain Winner",
+    company_name: "SKNCOE",
+    icon: tesla, // Placeholder
+    iconBg: "#E6DEDD",
+    date: "Oct 2025",
+    points: [
+      "Secured Domain Winner for presenting a technically robust and innovative solution.",
+      "Recognized for clarity, feasibility, and real-world relevance.",
+    ],
   },
   {
-    testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: user3,
+    title: "IEEE CIS IDEATHON 2025 – First Prize",
+    company_name: "IEEE Computational Intelligence Society",
+    icon: shopify, // Placeholder
+    iconBg: "#383E56",
+    date: "Aug 2025",
+    points: [
+      "Awarded First Prize for proposing an AI-driven solution evaluated by academic and industry experts.",
+      "Demonstrated strong computational intelligence principles and practical deployment potential.",
+    ],
+  },
+  {
+    title: "PICT Impetus ’25 – International Level Runner-Up",
+    company_name: "PICT Pune",
+    icon: meta, // Placeholder
+    iconBg: "#E6DEDD",
+    date: "Mar 2025",
+    points: [
+      "Achieved Runner-Up position in an international-level project competition.",
+      "Recognized for innovation depth, execution quality, and presentation.",
+    ],
+  },
+  {
+    title: "Techathon 2.0 – Best Solution Winner",
+    company_name: "Innovation Foundation",
+    icon: starbucks,
+    iconBg: "#383E56",
+    date: "Feb 2025",
+    points: [
+      "Won Best Solution Award at a national hackathon.",
+      "Delivered an end-to-end, impact-oriented system with strong technical architecture.",
+    ],
+  },
+  {
+    title: "International Innovation Challenge – Top 30 Teams",
+    company_name: "Manipal University Jaipur",
+    icon: tesla,
+    iconBg: "#E6DEDD",
+    date: "Nov 2024",
+    points: [
+      "Selected among the Top 30 teams internationally.",
+      "Showcased innovation excellence and strong competitive standing on a global platform.",
+    ],
+  },
+  {
+    title: "Tietoevry Hackathon – Top 5 Finalists",
+    company_name: "COEP Pune",
+    icon: shopify,
+    iconBg: "#383E56",
+    date: "Oct 2024",
+    points: [
+      "Finished in the Top 5 teams overall.",
+      "Ranked 1st in problem statement category for applied machine learning and analytical strength.",
+    ],
+  },
+  {
+    title: "Smart India Hackathon 2024 – Internal Hackathon Winner",
+    company_name: "Smart India Hackathon",
+    icon: meta,
+    iconBg: "#E6DEDD",
+    date: "Sep 2024",
+    points: [
+      "Won the internal SIH selection round.",
+      "Qualifying for higher evaluation levels by presenting a scalable, government-aligned solution.",
+    ],
+  },
+  {
+    title: "Technical Secretary",
+    company_name: "Vishwakarma Institute of Technology, Pune",
+    icon: starbucks,
+    iconBg: "#383E56",
+    date: "Role-based Achievement",
+    points: [
+      "Leading technical initiatives and mentoring teams for hackathons.",
+      "Organizing events and fostering a strong innovation culture within the institute.",
+    ],
+  },
+  {
+    title: "IUCAA Satellite Making Challenge – Runner-Up",
+    company_name: "IUCAA",
+    icon: tesla,
+    iconBg: "#E6DEDD",
+    date: "Feb 2021",
+    points: [
+      "Recognized for hands-on engineering skills and teamwork in satellite design.",
+      "Demonstrated early interest in deep tech and systems engineering.",
+    ],
+  },
+  {
+    title: "Best Outgoing Student",
+    company_name: "Deccan Education Society’s DES Secondary School",
+    icon: shopify,
+    iconBg: "#383E56",
+    date: "May 2021",
+    points: [
+      "Awarded for academic excellence, leadership, and overall contribution.",
+    ],
+  },
+  {
+    title: "Smart School Hackathon 2020 – National Winner",
+    company_name: "Persistent Systems (C4i4)",
+    icon: meta,
+    iconBg: "#E6DEDD",
+    date: "Feb 2020",
+    points: [
+      "Won a national-level hackathon at school level.",
+      "Marked the beginning of a consistent journey in competitive innovation.",
+    ],
   },
 ] as const;
 
 // Projects
 export const PROJECTS = [
   {
-    name: "Disney+ Clone",
+    name: "AR Wardrobe",
     description:
-      "Disney+ is one of the biggest streaming platforms used by millions of people world-wide and allows us to stream high quality content in 4k and various other formats",
+      "An Augmented Reality virtual try-on system that allows users to digitally visualize outfits and receive personalized fashion recommendations.",
     tags: [
+      {
+        name: "unity",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "blender",
+        color: "green-text-gradient",
+      },
       {
         name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "firebase",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
         color: "pink-text-gradient",
       },
     ],
-    image: project1,
-    source_code_link: "https://github.com/sanidhyy/disney-clone",
-    live_site_link: "https://clonedisneyplus.web.app",
+    image: project1, // Placeholder
+    source_code_link: "https://github.com/Atharva2079",
+    live_site_link: "",
   },
   {
-    name: "Golds Gym",
+    name: "HeamoScan",
     description:
-      "Web application that enables users to search for fitness exercises, effective personalized positions, and recommends new exercises based on their personal preferences.",
+      "AI-powered healthcare solution that predicts hemoglobin levels using nail or fingertip images, offering a non-invasive alternative to blood testing.",
     tags: [
       {
-        name: "react",
+        name: "python",
         color: "blue-text-gradient",
       },
       {
-        name: "rapidapi",
+        name: "machine-learning",
         color: "green-text-gradient",
       },
       {
-        name: "tailwindcss",
+        name: "opencv",
         color: "pink-text-gradient",
       },
     ],
-    image: project2,
-    source_code_link: "https://github.com/sanidhyy/fitness-app",
-    live_site_link: "https://fitness-gym-react.netlify.app",
+    image: project2, // Placeholder
+    source_code_link: "https://github.com/Atharva2079",
+    live_site_link: "",
   },
   {
-    name: "Shoppy",
+    name: "Wall Color Visualizer",
     description:
-      "The most personalised admin dashboard web application that allows enables users to choose customized themes and dark mode with different pages and variety of charts.",
+      "AR-based system that allows users to preview wall colors in real time and accurately measure wall dimensions to estimate paint requirements.",
     tags: [
       {
-        name: "react",
+        name: "ar",
         color: "blue-text-gradient",
       },
       {
-        name: "syncfusion",
+        name: "opencv",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "web-technologies",
         color: "pink-text-gradient",
       },
     ],
-    image: project3,
-    source_code_link: "https://github.com/sanidhyy/admin-dashboard",
-    live_site_link: "https://shoppy-dashboard-react.netlify.app",
+    image: project3, // Placeholder
+    source_code_link: "https://github.com/Atharva2079",
+    live_site_link: "",
   },
   {
-    name: "TikTok Clone",
+    name: "Marine Fouling Monitoring",
     description:
-      "A Next JS Web Application that enables users to upload videos of any length and size, create accounts and connect with other people just like any other social media.",
+      "Machine learning–based solution for detecting and analyzing marine biofouling on submerged structures to improve maintenance efficiency.",
     tags: [
       {
-        name: "nextjs",
+        name: "machine-learning",
         color: "blue-text-gradient",
       },
       {
-        name: "nodejs",
+        name: "image-processing",
         color: "green-text-gradient",
       },
-      {
-        name: "tailwindcss",
-        color: "pink-text-gradient",
-      },
     ],
-    image: project4,
-    source_code_link: "https://github.com/sanidhyy/tiktok-clone",
-    live_site_link: "https://tiktok-clone-react.vercel.app",
+    image: project4, // Placeholder
+    source_code_link: "https://github.com/Atharva2079",
+    live_site_link: "",
   },
   {
-    name: "Cryptoverse",
+    name: "Vardhit-Setu",
     description:
-      "Best Cryptocurrency web application that allows users to view price, market cap and daily change in realtime for almost every cryptocurrency in the world.",
+      "Immersive AR/VR platform for checking India’s cultural heritage. Enables interactive exploration of monuments using 3D reconstructions and storytelling.",
     tags: [
       {
-        name: "react",
+        name: "unity",
         color: "blue-text-gradient",
       },
       {
-        name: "rapidapi",
+        name: "arcore",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "vr",
         color: "pink-text-gradient",
       },
     ],
-    image: project5,
-    source_code_link: "https://github.com/sanidhyy/crypto-app",
-    live_site_link: "https://reactjscryptoapp.netlify.app",
+    image: project5, // Placeholder
+    source_code_link: "https://github.com/Atharva2079",
+    live_site_link: "",
   },
   {
-    name: "Travel Advisor",
+    name: "Warehouse Management",
     description:
-      "Web application that enables you to view your nearby restaurants, hotels and attractions which can be sorted by ratings, price and much more.",
+      "Virtual warehouse navigation system helping employees locate items inside large warehouses using digital mapping and guided navigation.",
     tags: [
       {
-        name: "react",
+        name: "ar-concepts",
         color: "blue-text-gradient",
       },
       {
-        name: "rapidapi",
+        name: "virtual-mapping",
         color: "green-text-gradient",
       },
       {
-        name: "material-ui",
+        name: "web",
         color: "pink-text-gradient",
       },
     ],
-    image: project6,
-    source_code_link: "https://github.com/sanidhyy/travel-advisor",
-    live_site_link: "https://travel-advisor-reactjs.netlify.app",
+    image: project6, // Placeholder
+    source_code_link: "https://github.com/Atharva2079",
+    live_site_link: "",
   },
 ] as const;
 
 export const SOCIALS = [
   {
-    name: "YouTube",
-    icon: youtube,
-    link: "https://www.youtube.com/@OPGAMER.",
-  },
-  {
     name: "Linkedin",
     icon: linkedin,
-    link: "https://www.linkedin.com/in/sanidhyy",
-  },
-  {
-    name: "Twitter",
-    icon: twitter,
-    link: "https://x.com/sanidhyyy",
+    link: "https://www.linkedin.com/in/atharva-patwardhan-8b204b30a",
   },
   {
     name: "GitHub",
     icon: github,
-    link: "https://github.com/sanidhyy",
+    link: "https://github.com/Atharva2079",
   },
 ] as const;
